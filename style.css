@@ -1,0 +1,1052 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   scroll-behavior: smooth;
+   font-family: "Martel Sans", sans-serif;
+}
+
+body {
+   background-color: #000;
+   overflow-x: hidden;
+   width: 100vw;
+   height: fit-content;
+
+}
+
+.home {
+   height: 90vh;
+   width: 100vw;
+   background-image: url(Assets/Images/BG-Netflix.jpg);
+   background-position: center center;
+   object-fit: cover;
+   background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 480px) {
+   .home {
+      height: 80vh;
+      width: 100vw;
+      background-image: url(Assets/Images/BG-Netflix.jpg);
+      background-position: center center;
+      object-fit: cover;
+   }
+}
+
+.box {
+   height: 90vh;
+   width: 100vw;
+   background-color: #000;
+   opacity: 0.80;
+   position: absolute;
+   top: 0;
+   z-index: 0;
+}
+
+@media only screen and (max-width: 480px) {
+   .box {
+      height: 80vh;
+      width: 100vw;
+      background-color: #000;
+      opacity: 0.80;
+      position: absolute;
+      top: 0;
+      z-index: 0;
+   }
+}
+
+nav {
+   top: 24px;
+   position: relative;
+   z-index: 10;
+   display: flex;
+   width: 80vw;
+   align-items: center;
+   margin: auto;
+   justify-content: space-between;
+}
+
+nav .CTA {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1vw;
+}
+
+@media only screen and (max-width: 480px) {
+   nav .CTA {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3vw;
+   }
+}
+
+nav .CTA Select {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   width: fit-content;
+   background-color: rgba(30, 30, 30, 0.129);
+   color: white;
+   padding: 2px 12px;
+   font-size: medium;
+   font-weight: 600;
+   border-radius: 6px;
+   border: 1.4px double #fff;
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   -ms-border-radius: 6px;
+   -o-border-radius: 6px;
+
+   &:hover {
+      padding: 4px 16px;
+   }
+}
+
+@media only screen and (max-width: 480px) {
+   nav .CTA Select {
+      display: flex;
+      width: 12vw;
+      text-overflow: ellipsis;
+      background-color: rgba(30, 30, 30, 0.129);
+      color: white;
+      padding: 1px 6px;
+      font-size: small;
+      font-weight: 600;
+      border-radius: 6px;
+      border: 1.4px double #fff;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      -ms-border-radius: 6px;
+      -o-border-radius: 6px;
+
+      &:hover {
+         padding: 2px 8px;
+      }
+   }
+}
+
+nav .CTA Select option {
+   background-color: rgb(255, 255, 255);
+   color: rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 480px) {
+   nav .CTA Select option {
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+   }
+}
+
+.btn-red-sm {
+   display: flex;
+   justify-content: center;
+   width: fit-content;
+   background-color: #c11119;
+   color: white;
+   padding: 2px 12px;
+   border: none;
+   font-size: medium;
+   font-weight: 700;
+   border-radius: 6px;
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   -ms-border-radius: 6px;
+   -o-border-radius: 6px;
+}
+
+@media only screen and (max-width: 480px) {
+   .btn-red-sm {
+      display: flex;
+      width: 35vw;
+      background-color: #c11119;
+      color: white;
+      padding: 2px 6px;
+      border: none;
+      font-size: small;
+      font-weight: 700;
+      border-radius: 6px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      -ms-border-radius: 6px;
+      -o-border-radius: 6px;
+   }
+}
+
+.header {
+   top: 20vh;
+   position: relative;
+   z-index: 10;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   gap: 3vh;
+}
+
+@media only screen and (max-width: 480px) {
+   .header {
+      top: 15vh;
+      position: relative;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      gap: 1.5vh;
+   }
+}
+
+.header>span:nth-child(1) {
+   color: white;
+   width: 45vw;
+   font-size: 350%;
+   font-weight: 900;
+   text-align: center;
+   line-height: 1.3;
+   overflow: hidden;
+}
+
+@media only screen and (max-width: 480px) {
+   .header>span:nth-child(1) {
+      color: white;
+      width: 90vw;
+      font-size: 180%;
+      font-weight: 900;
+      text-align: center;
+      line-height: 1.3;
+      overflow: hidden;
+   }
+}
+
+.header>span:nth-child(2) {
+   color: white;
+   width: 45vw;
+   font-size: 120%;
+   font-weight: 700;
+   text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+   .header>span:nth-child(2) {
+      color: white;
+      width: 90vw;
+      font-size: 90%;
+      font-weight: 600;
+      text-align: center;
+   }
+}
+
+.header>span:nth-child(3) {
+   color: white;
+   text-align: center;
+   font-weight: 600;
+}
+
+@media only screen and (max-width: 480px) {
+   .header>span:nth-child(3) {
+      color: white;
+      font-weight: 600;
+      width: 90vw;
+      text-align: center;
+   }
+}
+
+.inputs {
+   color: #fff;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1vw;
+}
+
+@media only screen and (max-width: 480px) {
+
+   .inputs {
+      color: #fff;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1vh;
+   }
+}
+
+.inputs input {
+   color: #fff;
+   display: flex;
+   text-align: start;
+   border: 1.2px solid rgb(185, 185, 185);
+   backdrop-filter: blur(50px);
+   background: none;
+   font-size: medium;
+   outline: none;
+   border-radius: 4px;
+   padding: 1.5vh 10vw 1.5vh 2vw;
+   -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   -ms-border-radius: 4px;
+   -o-border-radius: 4px;
+
+   &::placeholder {
+      color: white;
+      opacity: 1;
+   }
+}
+
+@media only screen and (max-width: 480px) {
+
+   .inputs input {
+      color: #fff;
+      width: 75vw;
+      display: flex;
+      text-align: start;
+      border: 1.2px solid rgb(185, 185, 185);
+      backdrop-filter: blur(50px);
+      background: none;
+      font-size: medium;
+      border-radius: 4px;
+      padding: 1.5vh;
+
+      &::placeholder {
+         color: white;
+         opacity: 1;
+      }
+   }
+}
+
+.inputs>button {
+   color: #fff;
+   background: #c11119;
+   font-size: large;
+   font-weight: 900;
+   border: none;
+   padding: 1.5vh 2vw;
+   border-radius: 4px;
+}
+
+@media only screen and (max-width: 480px) {
+   .inputs>button {
+      color: #fff;
+      background: #c11119;
+      font-size: medium;
+      font-weight: 900;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1.2vh 3.5vw;
+      border-radius: 4px;
+   }
+}
+
+.MovieSection {
+   width: 80vw;
+   color: #fff;
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+   padding: 3vh 0vw;
+   margin: auto;
+   gap: 2vh;
+}
+
+@media only screen and (max-width: 480px) {
+   .MovieSection {
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      padding: 3vh 0;
+      gap: 2vh;
+      margin: auto;
+      width: 90vw;
+      overflow: hidden;
+   }
+}
+
+.MovieSection>.heading {
+   color: #fff;
+   width: 100vw;
+   overflow-y: hidden;
+   padding: 0 0 3vh 0;
+   font-size: x-large;
+   font-weight: 900;
+}
+
+@media only screen and (max-width: 480px) {
+   .MovieSection>.heading {
+      color: #fff;
+      width: 100vw;
+      overflow-y: hidden;
+      padding: 1vh 0;
+      font-size: large;
+      font-weight: 700;
+   }
+}
+
+.MovieSection .Trending-Movies {
+   display: flex;
+   align-items: center;
+   gap: 1vw;
+   padding-bottom: 1vh;
+}
+
+@media only screen and (max-width: 480px) {
+   .MovieSection .Trending-Movies {
+      display: flex;
+      align-items: center;
+      gap: 3vw;
+      padding-bottom: 2vh;
+   }
+}
+
+.MovieSection Select {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   width: fit-content;
+   background-color: rgba(30, 30, 30, 0.129);
+   color: white;
+   padding: 2px 12px;
+   font-size: medium;
+   font-weight: 600;
+   border-radius: 6px;
+   border: 1.4px double #fff;
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   -ms-border-radius: 6px;
+   -o-border-radius: 6px;
+
+   &:hover {
+      padding: 4px 16px;
+   }
+}
+
+@media only screen and (max-width: 480px) {
+   .MovieSection Select {
+      display: flex;
+      width: 24vw;
+      text-overflow: ellipsis;
+      background-color: rgba(30, 30, 30, 0.129);
+      color: white;
+      padding: 1px 6px;
+      font-size: small;
+      font-weight: 600;
+      border-radius: 6px;
+      border: 1.4px double #fff;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      -ms-border-radius: 6px;
+      -o-border-radius: 6px;
+
+      &:hover {
+         padding: 2px 8px;
+      }
+   }
+}
+
+.MovieSection Select option {
+   background-color: rgb(255, 255, 255);
+   color: rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 480px) {
+   .MovieSection Select option {
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+   }
+}
+
+
+
+.MovieSection .Movie {
+   display: flex;
+   flex-direction: row;
+   gap: 4vh;
+   align-items: center;
+   justify-content: space-around;
+   width: 80vw;
+   height: fit-content;
+   overflow-x: auto;
+   overflow-y: hidden;
+   padding-bottom: 4vh;
+   scroll-behavior: smooth;
+}
+
+.MovieSection .Movie::-webkit-scrollbar {
+   width: 6px;
+}
+
+.MovieSection .Movie::-webkit-scrollbar-track {
+   background: #222222;
+}
+
+.MovieSection .Movie::-webkit-scrollbar-thumb {
+   background: #c11119;
+   border-radius: 6px;
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   -ms-border-radius: 6px;
+   -o-border-radius: 6px;
+}
+
+.MovieSection .Movie::-webkit-scrollbar-thumb:hover {
+   background: #f51722;
+}
+
+@media only screen and (max-width: 480px) {
+   .MovieSection .Movie {
+      display: flex;
+      flex-direction: row;
+      gap: 2vh;
+      align-items: center;
+      padding-left: 2vw;
+      justify-content: space-around;
+      padding-bottom: 4vh;
+      width: 85vw;
+      height: fit-content;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      padding-bottom: 4vh;
+   }
+}
+
+.MovieSection .Movie .images {
+   display: flex;
+   align-items: end;
+
+   &:hover {
+      scale: 105%;
+      transition: .5s;
+      -webkit-transition: .5s;
+      -moz-transition: .5s;
+      -ms-transition: .5s;
+      -o-transition: .5s;
+   }
+}
+
+@media only screen and (max-width: 480px) {
+   .MovieSection .Movie .images {
+      display: flex;
+   }
+}
+
+.images img {
+   border-radius: 8px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   -ms-border-radius: 8px;
+   -o-border-radius: 8px;
+}
+
+
+@media only screen and (max-width: 480px) {
+   .images img {
+      height: 200px;
+      width: 150px;
+      border-radius: 8px;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+      -o-border-radius: 8px;
+   }
+}
+
+
+.images span {
+   display: flex;
+   font-size: 100px;
+   color: #000;
+   font-weight: bolder;
+   -webkit-text-stroke: 1px;
+   -webkit-text-stroke-color: white;
+   height: fit-content;
+   margin-right: -40px;
+   margin-bottom: -60px;
+   z-index: 10;
+}
+
+@media only screen and (max-width: 480px) {
+   .images span {
+      display: flex;
+      font-size: 60px;
+      color: #000;
+      font-weight: bolder;
+      -webkit-text-stroke: 1px;
+      -webkit-text-stroke-color: white;
+      height: fit-content;
+      margin-right: -20px;
+      margin-bottom: -20px;
+      z-index: 10;
+   }
+}
+
+.ReasonsSection {
+   width: 80vw;
+   color: #fff;
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+   margin: auto;
+   gap: 2vh;
+}
+
+@media only screen and (max-width: 480px) {
+   .ReasonsSection {
+      width: 90vw;
+      padding: 3vh 0;
+      margin: auto;
+      gap: 2vh;
+   }
+}
+
+.ReasonsSection>span {
+   color: #fff;
+   width: 100vw;
+   padding: 3vh 0;
+   font-size: x-large;
+   font-weight: 900;
+}
+
+@media only screen and (max-width: 480px) {
+   .ReasonsSection>span {
+      font-size: large;
+      font-weight: 700;
+   }
+}
+
+.ReasonsSection>div {
+   width: 90vw;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 480px) {
+   .ReasonsSection>div {
+      width: 90vw;
+   }
+}
+
+.ReasonsSection>div .TextBox {
+   display: flex;
+   flex-direction: column;
+   height: 33vh;
+   width: 17vw;
+   background: linear-gradient(to bottom, #1a2145, #220e17);
+   border-radius: 10px;
+   padding: 2vh;
+   margin: 1vh;
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+   justify-content: space-between;
+}
+
+@media only screen and (max-width: 480px) {
+   .ReasonsSection div .TextBox {
+      display: flex;
+      flex-direction: column;
+      height: 20vh;
+      width: 100%;
+      background: linear-gradient(to bottom, #1a2145, #220e17);
+      border-radius: 10px;
+      padding: 2vh;
+      margin: 1vh;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      justify-content: space-between;
+   }
+}
+
+.TextBox .text {
+   display: flex;
+   flex-direction: column;
+}
+
+@media only screen and (max-width: 480px) {
+   .TextBox .text {
+      display: flex;
+      flex-direction: column;
+   }
+}
+
+.TextBox .text .heading {
+   font-size: large;
+   font-weight: bolder;
+}
+
+@media only screen and (max-width: 480px) {
+   .TextBox .text .heading {
+      font-size: medium;
+      font-weight: 700;
+   }
+}
+
+.TextBox .text p {
+   font-size: small;
+   opacity: 0.6;
+}
+
+@media only screen and (max-width: 480px) {
+   .TextBox .text p {
+      font-size: small;
+      opacity: 0.6;
+   }
+}
+
+.TextBox .icon {
+   width: 100%;
+}
+
+.TextBox img {
+
+   width: 30%;
+   padding-left: 70%;
+}
+
+@media only screen and (max-width: 480px) {
+   .TextBox img {
+      width: 25%;
+   }
+}
+
+.FQA {
+   width: 80vw;
+   color: #fff;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   overflow: hidden;
+   gap: 2vh;
+   margin: auto;
+}
+
+
+@media only screen and (max-width: 480px) {
+   .FQA {
+      width: 90vw;
+      gap: 2vh;
+      margin: auto;
+   }
+}
+
+.FQA span {
+   color: #fff;
+   width: 100vw;
+   padding: 3vh 0;
+   font-size: x-large;
+   font-weight: 900;
+}
+
+
+@media only screen and (max-width: 480px) {
+   .FQA span {
+      color: #fff;
+      width: 100vw;
+      padding: 3vh 0;
+      font-size: large;
+      font-weight: 700;
+   }
+}
+
+.FQA .Questions {
+   width: 93%;
+   display: flex;
+   justify-content: space-between;
+   color: #fff;
+   background-color: #2d2d2d;
+   padding: 3vh 2vw;
+
+   &:hover {
+      transition: 0.5s;
+      background-color: #545454;
+   }
+}
+
+
+@media only screen and (max-width: 480px) {
+   .FQA .Questions {
+      width: 80vw;
+      display: flex;
+      justify-content: space-between;
+      color: #fff;
+      background-color: #2d2d2d;
+      padding: 2dvb 6vw;
+
+      &:hover {
+         transition: 0.5s;
+         background-color: #545454;
+      }
+   }
+}
+
+.FQA .heading {
+   font-size: x-large;
+   font-weight: 600;
+}
+
+
+@media only screen and (max-width: 480px) {
+   .FQA .heading {
+      font-size: medium;
+      font-weight: 600;
+   }
+}
+
+.Sub-Email {
+   width: 80vw;
+   color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   flex-wrap: wrap;
+   overflow: hidden;
+   gap: 2vh;
+   margin: auto;
+   padding: 10vh 0;
+}
+
+@media only screen and (max-width: 480px) {
+   .Sub-Email {
+      width: 90vw;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 2vh;
+      justify-content: center;
+      padding: 8vh 0;
+   }
+}
+
+
+.Sub-Email .inputs {
+   color: #fff;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1vw;
+}
+
+@media only screen and (max-width: 480px) {
+
+   .Sub-Email .inputs {
+      color: #fff;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: start;
+      gap: 1vh;
+   }
+}
+
+.Sub-Email .inputs input {
+   color: #fff;
+   display: flex;
+   text-align: start;
+   border: 1.2px solid rgb(185, 185, 185);
+   backdrop-filter: blur(50px);
+   background: none;
+   font-size: medium;
+   outline: none;
+   border-radius: 4px;
+   padding: 1.5vh 25vw 1.5vh 2vw;
+   -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   -ms-border-radius: 4px;
+   -o-border-radius: 4px;
+
+   &::placeholder {
+      color: white;
+      opacity: 1;
+   }
+}
+
+@media only screen and (max-width: 480px) {
+
+   .Sub-Email .inputs input {
+      color: #fff;
+      width: 75vw;
+      display: flex;
+      text-align: start;
+      border: 1.2px solid rgb(185, 185, 185);
+      backdrop-filter: blur(50px);
+      background: none;
+      font-size: medium;
+      border-radius: 4px;
+      padding: 1.5vh;
+
+      &::placeholder {
+         color: white;
+         opacity: 1;
+      }
+   }
+}
+
+.Sub-Email .inputs>button {
+   color: #fff;
+   background: #c11119;
+   font-size: large;
+   font-weight: 900;
+   border: none;
+   padding: 1.5vh 2vw;
+   border-radius: 4px;
+}
+
+@media only screen and (max-width: 480px) {
+   .Sub-Email .inputs>button {
+      color: #fff;
+      background: #c11119;
+      font-size: medium;
+      font-weight: 900;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1.2vh 3.5vw;
+      border-radius: 4px;
+   }
+}
+
+.Footer {
+   width: 80vw;
+   color: #d7d6d6;
+
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   gap: 2vh;
+   margin: auto;
+}
+
+@media only screen and (max-width: 480px) {
+   .Footer {
+      width: 90vw;
+      gap: 2vh;
+      margin: auto;
+   }
+}
+
+.Footer .PageLink {
+   padding-top: 2vh;
+   width: 100%;
+   color: #d7d6d6;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   gap: 2vh;
+   justify-content: space-between;
+   text-decoration: underline;
+   margin: auto;
+   justify-content: space-between #d7d6d6;
+}
+
+@media only screen and (max-width: 480px) {
+   .Footer .PageLink {
+      padding-top: 2vh;
+      width: 90vw;
+      gap: 2vh;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+   }
+}
+
+.Footer .PageLink .links {
+   display: flex;
+   flex-direction: column;
+   gap: 1vh;
+   font-size: small;
+}
+
+@media only screen and (max-width: 480px) {
+   .Footer .PageLink .links {
+      display: flex;
+      flex-direction: column;
+      gap: 1vh;
+      font-size: small;
+   }
+}
+
+.Footer .button {
+   padding-top: 2vh;
+}
+
+@media only screen and (max-width: 480px) {
+   .Footer .button {
+      padding-top: 2vh;
+   }
+}
+
+.Footer Select {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   width: fit-content;
+   background-color: rgba(30, 30, 30, 0.129);
+   color: white;
+   padding: 2px 12px;
+   font-size: medium;
+   font-weight: 600;
+   border-radius: 6px;
+   border: 1.4px double #fff;
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   -ms-border-radius: 6px;
+   -o-border-radius: 6px;
+
+   &:hover {
+      padding: 4px 16px;
+   }
+}
+
+@media only screen and (max-width: 480px) {
+   .Footer Select {
+      display: flex;
+      width: 24vw;
+      text-overflow: ellipsis;
+      background-color: rgba(30, 30, 30, 0.129);
+      color: white;
+      padding: 1px 6px;
+      font-size: small;
+      font-weight: 600;
+      border-radius: 6px;
+      border: 1.4px double #fff;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      -ms-border-radius: 6px;
+      -o-border-radius: 6px;
+
+      &:hover {
+         padding: 2px 8px;
+      }
+   }
+}
+
+.Footer Select option {
+   background-color: rgb(255, 255, 255);
+   color: rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 480px) {
+   .Footer Select option {
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+   }
+}
+
+.Footer .F-logo {
+   padding-top: 2vh;
+   padding-bottom: 10vh;
+}
+
+@media only screen and (max-width: 480px) {
+   .Footer .F-logo {
+      padding-top: 2vh;
+      padding-bottom: 08vh;
+   }
+}
