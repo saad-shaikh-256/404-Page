@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   scroll-behavior: smooth;
+   box-sizing: border-box;
+   transition: .5s;
+   overflow-wrap: break-word;
+}
+
+html,
+body {
+   background-color: var(--white-color);
+   overflow-x: hidden;
+   width: 100dvw;
+   height: 100dvh;
+   color: var(--black-color);
+   font-family: 'Afacad', sans-serif;
+   scroll-behavior: smooth;
+}
+
+main {
+   width: 100%;
+   height: 90%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 20px;
+
+   #image {
+      width: 80%;
+      height: fit-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+         scale: 100%;
+
+         &:hover{
+            scale: 105%;
+         }
+      }
+   }
+
+   #textContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 80%;
+      gap: 16px;
+
+      #heading {
+         width: 100%;
+         text-align: center;
+         color: #424242;
+         font-size: 50px;
+         font-weight: 700;
+      }
+
+      #subheading {
+         width: 100%;
+         text-align: center;
+         color: #757575;
+         font-size: 20px;
+         font-weight: 500;
+         line-height: 142.1%;
+      }
+   }
+}
+
+footer {
+   width: 100%;
+   height: 10%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   a {
+      color: #616161;
+      text-align: center;
+      font-family: Afacad;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 210%;
+   }
+}
+
+@media only screen and (max-width: 480px) {
+   main {
+      width: 100%;
+      height: 90%;
+      gap: 12px;
+
+      #image {
+         width: 80%;
+
+         img {
+            scale: 75%;
+         }
+      }
+
+      #textContainer {
+         width: 80%;
+
+         #heading {
+            font-size: 30px;
+         }
+
+         #subheading {
+            font-size: 12px;
+         }
+      }
+   }
+
+   footer {
+
+      a {
+         font-size: 16px;
+      }
+   }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+   main {
+      width: 100%;
+      height: 90%;
+      gap: 12px;
+
+      #image {
+         width: 80%;
+
+         img {
+            scale: 75%;
+         }
+      }
+
+      #textContainer {
+         width: 80%;
+
+         #heading {
+            font-size: 30px;
+         }
+
+         #subheading {
+            font-size: 12px;
+         }
+      }
+   }
+
+   footer {
+
+      a {
+         font-size: 16px;
+      }
+   }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+   main {
+      width: 100%;
+      height: 90%;
+      gap: 12px;
+
+      #image {
+         width: 80%;
+
+         img {
+            scale: 80%;
+         }
+      }
+
+      #textContainer {
+         width: 80%;
+
+         #heading {
+            font-size: 36px;
+         }
+
+         #subheading {
+            font-size: 16px;
+         }
+      }
+   }
+
+   footer {
+
+      a {
+         font-size: 16px;
+      }
+   }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+   main {
+      width: 100%;
+      height: 90%;
+      gap: 12px;
+
+      #image {
+         width: 80%;
+
+         img {
+            scale: 85%;
+         }
+      }
+
+      #textContainer {
+         width: 80%;
+
+         #heading {
+            font-size: 42px;
+         }
+
+         #subheading {
+            font-size: 18px;
+         }
+      }
+   }
+
+   footer {
+
+      a {
+         font-size: 18px;
+      }
+   }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+   main {
+      width: 100%;
+      height: 90%;
+      gap: 12px;
+
+      #image {
+         width: 80%;
+
+         img {
+            scale: 90%;
+         }
+      }
+
+      #textContainer {
+         width: 80%;
+
+         #heading {
+            font-size: 46px;
+         }
+
+         #subheading {
+            font-size: 20px;
+         }
+      }
+   }
+
+   footer {
+
+      a {
+         font-size: 20px;
+      }
+   }
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+   main {
+      width: 100%;
+      height: 90%;
+      gap: 12px;
+
+      #image {
+         width: 80%;
+
+         img {
+            scale: 95%;
+         }
+      }
+
+      #textContainer {
+         width: 80%;
+
+         #heading {
+            font-size: 50px;
+         }
+
+         #subheading {
+            font-size: 20px;
+         }
+      }
+   }
+
+   footer {
+
+      a {
+         font-size: 20px;
+      }
+   }
+}
+
+@media (min-width: 1601px) {
+   main {
+      width: 100%;
+      height: 90%;
+      gap: 12px;
+
+      #image {
+         width: 80%;
+
+         img {
+            scale: 95%;
+         }
+      }
+
+      #textContainer {
+         width: 80%;
+
+         #heading {
+            font-size: 50px;
+         }
+
+         #subheading {
+            font-size: 20px;
+         }
+      }
+   }
+
+   footer {
+
+      a {
+         font-size: 20px;
+      }
+   }
+}
