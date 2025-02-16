@@ -29,3 +29,16 @@ To run this project locally, follow these steps:
 
    ```bash
    git clone https://github.com/saad-shaikh-256/404-Page.git
+
+2. Navigate to the project folder:
+
+   ```bash
+   cd 404-Page
+   ```
+
+3. Open `index.html` in your browser.
+
+
+---
+
+🚀 **Designed & Developed by [Saad Shaikh](https://saad-shaikh.vercel.app/)**  
