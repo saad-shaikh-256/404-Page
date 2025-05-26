@@ -1,3 +1,7 @@
+* {
+  transition: 0.5s;
+}
+
 .App {
   text-align: center;
 }
@@ -34,5 +38,21 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.Ghost-Img {
+  animation: Ghost-Up-Down infinite 2s ease-in-out alternate;
+}
+
+@keyframes Ghost-Up-Down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
