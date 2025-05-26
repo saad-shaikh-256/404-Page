@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# 404-Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![404 Page Cover](./public/assets/Cover/Full-Cover.png)
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+**404-Page** is a clean, modern, and responsive **404 error page** built using **React**, **Tailwind CSS**, and **JavaScript**. It's designed to improve user experience when navigating to broken or missing links on a website.
 
-### `npm start`
+Perfect for web apps, portfolios, or any project that needs a stylish and user-friendly "Page Not Found" screen.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Live Preview & Design
 
-### `npm test`
+* **[Live Preview](https://boo-404.vercel.app/)**
+  See the 404-Page in action.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* **[View Design on Figma](https://www.figma.com/community/file/1381562385964018425/08-daily-ui-challenge-404-page)**
+  Check out the design prototype or duplicate for your own use.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* **Clean & Minimal UI**: Clearly communicates the 404 error with modern visuals.
+* **Responsive Layout**: Looks great on both desktop and mobile devices.
+* **Animated Elements**: Smooth transitions and effects using Tailwind and CSS animations.
+* **Customizable**: Easy to edit text, styles, and layout to fit your brand or website.
+* **Accessible Design**: Built with semantic HTML and accessibility in mind.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Technologies Used
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* **HTML**
+* **CSS**
+* **JavaScript**
+* **React**
+* **Tailwind CSS**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To run this project locally:
 
-## Learn More
+1. **Clone the repository:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   git clone https://github.com/saad-shaikh-256/404-Page.git
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. **Navigate to the project folder:**
 
-### Code Splitting
+   ```bash
+   cd 404-page
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. **Install dependencies:**
 
-### Analyzing the Bundle Size
+   ```bash
+   npm install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+4. **Start the development server:**
 
-### Making a Progressive Web App
+   ```bash
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+5. **Open [http://localhost:3000](http://localhost:3000) in your browser.**
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Usage Notes
 
-### Deployment
+* This is a **standalone 404 error page** and can be integrated into any web app or site.
+* You can add it to your routing logic in frameworks like React Router to catch undefined routes.
+* Easily replace the default image, error code, and message with your own content or brand tone.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## Future Enhancements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Optional animation toggle
+* Themed 404 pages (funny, minimal, illustrated, etc.)
+* Redirect button with dynamic return logic
+
+---
+
+🚀 **Designed & Developed by [Saad Shaikh](https://saad-shaikh.vercel.app/)**
+
+Feel free to suggest features, report bugs, or fork the project!
