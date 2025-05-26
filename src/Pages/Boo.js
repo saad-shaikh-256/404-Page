@@ -4,7 +4,7 @@ import "../output.css";
 const Boo = () => {
   return (
     <>
-      <main className="h-dvh w-dvw flex flex-col justify-center items-center gap-6 font-afacad">
+      <main className="h-dvh w-dvw flex flex-col justify-center items-center gap-6 font-afacad overflow-hidden">
         <div className="upper-container h-fit w-fit flex justify-center items-center gap-3 sm:gap-4">
           <span className="h-fit w-fit text-8xl md:text-9xl font-bold text-neutral-700">
             4
